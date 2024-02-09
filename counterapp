@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>COUNTER</H3>
+    <h5>0</h5>
+    <button onclick="increase()">increament</button>
+    <button onclick="decrease()">decreament</button>
+    <script>
+  num=0;
+function increase(){
+   document.querySelector("h5").innerHTML= num= num+1; 
+}
+function decrease(){
+    // document.querySelector("h5").innerHTML= num= num-1;
+    if (num==0) {
+    document.querySelector("h5").innerHTML= 0;
+    } else {
+    document.querySelector("h5").innerHTML= num= num-1;
+    } 
+ }
+  </script>
+</body>
+</html>
